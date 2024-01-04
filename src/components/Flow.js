@@ -1,10 +1,10 @@
 import ReactFlow, { Controls, Background,applyEdgeChanges,applyNodeChanges,addEdge } from 'reactflow';
 import 'reactflow/dist/style.css';
 import initialNodes from './nodes1';
-import initialEdges from "./edges1" 
+// import initialEdges from "./edges1" 
 import { useState,useCallback } from 'react';
 export const Flow =()=>{
-
+const initialEdges=[]
     const [nodes,setNodes]= useState(initialNodes);
     const [edges,setEdges] = useState(initialEdges);
 

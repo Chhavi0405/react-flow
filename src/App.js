@@ -3,6 +3,9 @@ import { BasicIntro } from './components/BasicIntro';
 import  { CoreConcepts } from './components/CoreConcepts';
 import { Plugins } from './components/Plugins';
 import { Flow } from './components/Flow';
+import { Custom } from './components/Custom';
+import { CusEdge } from './components/CustomEdgess';
+
 
 
  
@@ -15,7 +18,9 @@ export default function App() {
     {/* <BasicIntro /> */}
     {/* <CoreConcepts/> */}
     {/* <Plugins/> */}
-   <Flow/>
+   {/* <Flow/> */}
+  {/* <Custom/> */}
+<CusEdge/>
    </div>
   );
 }

@@ -12,9 +12,26 @@ const initialEdges = [{ id: 'e1-2', source: '1', target: '2' },
 { id: 'e2-3', source: '2', target: '3' },];
  
 export default function App() {
+
+  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
+  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+
+  const onConnect = useCallback(
+    (params) => setEdges((eds) => addEdge(params, eds)),
+    [setEdges],
+  );
+
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
-      <ReactFlow nodes={initialNodes} edges={initialEdges} />
+      {/* <ReactFlow nodes={initialNodes} edges={initialEdges} /> */}
+
+      <ReactFlow
+        nodes={nodes}
+        edges={edges}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
+        onConnect={onConnect}
+      />
     </div>
   );
 }

@@ -2,7 +2,7 @@
 export default [
     {
         id: "1",
-        // type: "input",
+        type: "input",
         data: { label: "Hello" },
         position: { x: 150, y: 75 },
       },
@@ -14,7 +14,7 @@ export default [
       },
       {
         id: "3",
-        type: "default",
+        type: "input",
         data: { label: "React" },
         position: { x: 150, y: 275 },
       },

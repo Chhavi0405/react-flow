@@ -5,7 +5,8 @@ import { Plugins } from './components/Plugins';
 import { Flow } from './components/Flow';
 import { Custom } from './components/Custom';
 import { CusEdge } from './components/CustomEdgess';
-
+import  { ReactFlowProvider} from 'reactflow';
+import { UncontrolledFlow } from './components/UncontrolledFlow';
 
 
  
@@ -15,12 +16,16 @@ export default function App() {
 
   return (
    <div>
-    {/* <BasicIntro /> */}
+    <BasicIntro />
     {/* <CoreConcepts/> */}
     {/* <Plugins/> */}
    {/* <Flow/> */}
   {/* <Custom/> */}
-<CusEdge/>
+{/* <CusEdge/> */}
+{/* <ReactFlowProvider>
+        <UncontrolledFlow/>
+       </ReactFlowProvider> */}
    </div>
-  );
+   
+  )
 }

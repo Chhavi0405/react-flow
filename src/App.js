@@ -1,10 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BasicIntro } from './components/BasicIntro';
 
-function App() {
+
+ 
+export default function App() {
+
+
+
   return (
-   <p>hiii</p>
+   <div>
+    <BasicIntro />
+   </div>
   );
 }
-
-export default App;

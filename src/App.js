@@ -1,5 +1,7 @@
 import React,{useCallback} from 'react';
-import ReactFlow,{useEdgesState,useNodesState,addEdge} from 'reactflow';
+import ReactFlow,{useEdgesState,useNodesState,addEdge,MiniMap,
+  Controls,
+  Background,} from 'reactflow';
  
 import 'reactflow/dist/style.css';
  
@@ -31,7 +33,11 @@ export default function App() {
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
-      />
+      >
+       <Controls />
+        <MiniMap />
+        <Background variant="dots" gap={12} size={1} />
+        </ReactFlow>
     </div>
   );
 }
